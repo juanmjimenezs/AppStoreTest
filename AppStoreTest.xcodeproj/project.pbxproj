@@ -16,6 +16,7 @@
 		FA97A5F11E5516D400F0CA3A /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A5F01E5516D400F0CA3A /* RemoteService.swift */; };
 		FA97A5F31E551D7F00F0CA3A /* CategoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A5F21E551D7F00F0CA3A /* CategoryListVC.swift */; };
 		FA97A5F51E55308100F0CA3A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A5F41E55308100F0CA3A /* CategoryCell.swift */; };
+		FA97A5F71E554B4400F0CA3A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A5F61E554B4400F0CA3A /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FA97A5F01E5516D400F0CA3A /* RemoteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteService.swift; sourceTree = "<group>"; };
 		FA97A5F21E551D7F00F0CA3A /* CategoryListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListVC.swift; sourceTree = "<group>"; };
 		FA97A5F41E55308100F0CA3A /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		FA97A5F61E554B4400F0CA3A /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +90,6 @@
 				FA97A5EE1E55164B00F0CA3A /* Model */,
 				FA97A5ED1E55162F00F0CA3A /* View */,
 				FA97A5EC1E55162500F0CA3A /* Service */,
-				FA97A5D71E55161800F0CA3A /* AppDelegate.swift */,
 				FA97A5E61E55161800F0CA3A /* Info.plist */,
 			);
 			path = AppStoreTest;
@@ -98,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				FA97A5F01E5516D400F0CA3A /* RemoteService.swift */,
+				FA97A5F61E554B4400F0CA3A /* CoreDataStack.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -124,6 +126,7 @@
 		FA97A5EF1E55165100F0CA3A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FA97A5D71E55161800F0CA3A /* AppDelegate.swift */,
 				FA97A5F21E551D7F00F0CA3A /* CategoryListVC.swift */,
 			);
 			name = Controller;
@@ -255,6 +258,7 @@
 				FA97A5E01E55161800F0CA3A /* AppStoreTest.xcdatamodeld in Sources */,
 				FA97A5D81E55161800F0CA3A /* AppDelegate.swift in Sources */,
 				FA97A5F31E551D7F00F0CA3A /* CategoryListVC.swift in Sources */,
+				FA97A5F71E554B4400F0CA3A /* CoreDataStack.swift in Sources */,
 				FA97A5F11E5516D400F0CA3A /* RemoteService.swift in Sources */,
 				FA97A5F51E55308100F0CA3A /* CategoryCell.swift in Sources */,
 			);
@@ -420,6 +424,7 @@
 				FA97A5EB1E55161800F0CA3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
