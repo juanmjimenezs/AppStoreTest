@@ -13,14 +13,34 @@ class CategoryListVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var categoryList: [CategoryApp] = [CategoryApp]()
+    let dataProvider = LocalService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+        
+        self.loadCategories()
     }
     
+    func loadCategories() {
+        self.dataProvider.getCategories(localHandler: { (categories) in
+            if let categories = categories {
+                self.categoryList = categories
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            }
+        }, remoteHandler: { (categories) in
+            if let categories = categories {
+                self.categoryList = categories
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            }
+        })
+    }
 
     /*
     // MARK: - Navigation

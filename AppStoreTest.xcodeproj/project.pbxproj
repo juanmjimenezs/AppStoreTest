@@ -17,6 +17,7 @@
 		FA97A5F31E551D7F00F0CA3A /* CategoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A5F21E551D7F00F0CA3A /* CategoryListVC.swift */; };
 		FA97A5F51E55308100F0CA3A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A5F41E55308100F0CA3A /* CategoryCell.swift */; };
 		FA97A5F71E554B4400F0CA3A /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A5F61E554B4400F0CA3A /* CoreDataStack.swift */; };
+		FA97A5F91E554D5400F0CA3A /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A5F81E554D5400F0CA3A /* LocalService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FA97A5F21E551D7F00F0CA3A /* CategoryListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListVC.swift; sourceTree = "<group>"; };
 		FA97A5F41E55308100F0CA3A /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		FA97A5F61E554B4400F0CA3A /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		FA97A5F81E554D5400F0CA3A /* LocalService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				FA97A5F01E5516D400F0CA3A /* RemoteService.swift */,
 				FA97A5F61E554B4400F0CA3A /* CoreDataStack.swift */,
+				FA97A5F81E554D5400F0CA3A /* LocalService.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				FA97A5F31E551D7F00F0CA3A /* CategoryListVC.swift in Sources */,
 				FA97A5F71E554B4400F0CA3A /* CoreDataStack.swift in Sources */,
 				FA97A5F11E5516D400F0CA3A /* RemoteService.swift in Sources */,
+				FA97A5F91E554D5400F0CA3A /* LocalService.swift in Sources */,
 				FA97A5F51E55308100F0CA3A /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

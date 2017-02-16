@@ -13,12 +13,12 @@ import SwiftyJSON
 class RemoteService {
     
     /**
-     Nos trae el top 100 de aplicaciones gratuitas de iTunes
+     Nos trae las categorías (no repetidas) que encuentre entre las apps del WS
      
      - parameters:
-     - completionHandler: array de diccionarios con la información de cada categoría
+        - completionHandler: array de diccionarios con la información de cada categoría
      */
-    func getTopApps(completionHandler: @escaping ([[String:String]]?) -> Void) {
+    func getCategories(completionHandler: @escaping ([[String:String]]?) -> Void) {
         let url = URL(string: "https://itunes.apple.com/us/rss/topfreeapplications/limit=100/json")!
         
         Alamofire.request(url, method: .get).validate().responseJSON() { response in
