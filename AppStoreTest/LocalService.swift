@@ -35,7 +35,9 @@ class LocalService {
                 //Recorremos el arreglo de diccionarios (cada categoría quedará marcada como sincronizada)...
                 for categoryDictionary in categories {
                     //Si la categoría no existía en Core Data entonces la creamos
-                    if (self.getCategoryById(id: categoryDictionary["id"]!) == nil) {
+                    if let category = self.getCategoryById(id: categoryDictionary["id"]!) {
+                        self.updateCategory(categoryDictionary: categoryDictionary, category: category)
+                    } else {
                         self.insertCategory(categoryDictionary: categoryDictionary)
                     }
                 }
@@ -128,7 +130,21 @@ class LocalService {
         do {
             try context.save()
         } catch {
-            print("Error mietras actualizabamos Core Data")
+            print("Error mientras actualizabamos Core Data")
+        }
+    }
+    
+    ///Actualizamos la categoría en Core Data
+    func updateCategory(categoryDictionary: [String:String], category: CategoryApp) {
+        let context = coreDataStack.persistentContainer.viewContext
+        
+        category.title = categoryDictionary["title"]
+        category.sync = true//Se marca como sincronizada porque las que no lo estén, deben ser eliminadas
+        
+        do {
+            try context.save()
+        } catch {
+            print("Error mientras actualizabamos Core Data")
         }
     }
     
