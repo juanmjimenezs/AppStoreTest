@@ -6,12 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Categories-->
+        <!--Top Free Applications-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="CategoryListVC" customModule="AppStoreTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,45 +24,37 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6kx-0V-tB5">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.23201825200000001" green="0.23201825200000001" blue="0.23201825200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zch-iW-zBC">
-                                    <size key="itemSize" width="350" height="50"/>
+                                    <size key="itemSize" width="356" height="62"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="XSl-Yd-u3Q" customClass="CategoryCell" customModule="AppStoreTest" customModuleProvider="target">
-                                        <rect key="frame" x="13" y="0.0" width="350" height="50"/>
+                                        <rect key="frame" x="10" y="0.0" width="356" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="350" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="356" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="nTk-V7-KXt">
-                                                    <rect key="frame" x="71" y="8" width="271" height="34"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="nTk-V7-KXt">
+                                                    <rect key="frame" x="8" y="8" width="340" height="46"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category2" translatesAutoresizingMaskIntoConstraints="NO" id="hqm-dc-fEb">
-                                                    <rect key="frame" x="5" y="0.0" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="hqm-dc-fEb" secondAttribute="height" multiplier="1:1" id="lGb-28-Esl"/>
-                                                    </constraints>
-                                                </imageView>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.2562791407063813" green="0.25881655794109792" blue="0.25881655794109792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="hqm-dc-fEb" firstAttribute="top" secondItem="XSl-Yd-u3Q" secondAttribute="top" id="21U-D3-QN3"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="nTk-V7-KXt" secondAttribute="bottom" id="2Nu-bR-Peq"/>
-                                            <constraint firstItem="nTk-V7-KXt" firstAttribute="trailing" secondItem="XSl-Yd-u3Q" secondAttribute="trailingMargin" id="6eN-DU-Jb0"/>
-                                            <constraint firstItem="nTk-V7-KXt" firstAttribute="top" secondItem="XSl-Yd-u3Q" secondAttribute="topMargin" id="98b-gy-6zT"/>
-                                            <constraint firstItem="hqm-dc-fEb" firstAttribute="leading" secondItem="XSl-Yd-u3Q" secondAttribute="leading" constant="5" id="SeO-Fi-fN1"/>
-                                            <constraint firstAttribute="bottom" secondItem="hqm-dc-fEb" secondAttribute="bottom" id="jjk-hh-7g9"/>
-                                            <constraint firstItem="nTk-V7-KXt" firstAttribute="leading" secondItem="hqm-dc-fEb" secondAttribute="trailing" constant="16" id="ufA-cH-Hf9"/>
+                                            <constraint firstItem="nTk-V7-KXt" firstAttribute="leading" secondItem="XSl-Yd-u3Q" secondAttribute="leadingMargin" id="LsP-I4-1jl"/>
+                                            <constraint firstItem="nTk-V7-KXt" firstAttribute="top" secondItem="XSl-Yd-u3Q" secondAttribute="topMargin" id="VuW-tn-B1K"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="nTk-V7-KXt" secondAttribute="bottom" id="W5r-Ze-Hz2"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="nTk-V7-KXt" secondAttribute="trailing" id="WKL-0p-OME"/>
                                         </constraints>
-                                        <size key="customSize" width="350" height="50"/>
+                                        <size key="customSize" width="356" height="62"/>
                                         <connections>
                                             <outlet property="lblCategory" destination="nTk-V7-KXt" id="3pu-n2-WJs"/>
                                         </connections>
@@ -79,7 +70,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6kx-0V-tB5" secondAttribute="bottom" id="k4R-0h-d6e"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Categories" id="n3q-lL-Rir"/>
+                    <navigationItem key="navigationItem" title="Top Free Applications" id="n3q-lL-Rir"/>
                     <connections>
                         <outlet property="collectionView" destination="6kx-0V-tB5" id="mUW-rB-pYf"/>
                     </connections>
@@ -96,6 +87,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Zc-f9-ozq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -107,7 +102,4 @@
             <point key="canvasLocation" x="77.599999999999994" y="691.304347826087"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="category2" width="100" height="100"/>
-    </resources>
 </document>
