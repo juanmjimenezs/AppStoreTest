@@ -12,6 +12,8 @@ import SwiftyJSON
 
 class RemoteService {
     
+    let urlApps = "https://itunes.apple.com/us/rss/topfreeapplications/limit=100/json"
+    
     /**
      Nos trae las categorías (no repetidas) que encuentre entre las apps del WS
      
@@ -19,7 +21,7 @@ class RemoteService {
         - completionHandler: array de diccionarios con la información de cada categoría
      */
     func getCategories(completionHandler: @escaping ([[String:String]]?) -> Void) {
-        let url = URL(string: "https://itunes.apple.com/us/rss/topfreeapplications/limit=100/json")!
+        let url = URL(string: self.urlApps)!
         
         Alamofire.request(url, method: .get).validate().responseJSON() { response in
             switch response.result {
@@ -44,6 +46,55 @@ class RemoteService {
                             uniqueIds.append(id)
                             result.append(item)
                         }
+                        
+                    }
+                    
+                    completionHandler(result)
+                }
+            case .failure(let error):
+                print(error)
+                completionHandler(nil)
+            }
+        }
+    }
+    
+    /**
+     Nos trae las apps del top 100
+     
+     - parameters:
+     - completionHandler: array de diccionarios con la información de cada categoría
+     */
+    func getApps(completionHandler: @escaping ([[String:String]]?) -> Void) {
+        let url = URL(string: self.urlApps)!
+        
+        Alamofire.request(url, method: .get).validate().responseJSON() { response in
+            switch response.result {
+            case .success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    var result = [[String:String]]()//Listado de apps
+                    
+                    let entries = json["feed"]["entry"].arrayValue
+                    
+                    for entry in entries {
+                        
+                        var item = [String:String]()
+                        
+                        if let image = entry["im:image"].arrayValue.last {
+                            item["image"] = image["label"].stringValue.replacingOccurrences(of: "100x100", with: "500x500")
+                        }
+
+                        item["id"] = entry["id"]["attributes"]["im:id"].stringValue
+                        item["link"] = entry["id"]["label"].stringValue
+                        item["name"] = entry["im:name"]["label"].stringValue
+                        item["categoryId"] = entry["category"]["attributes"]["im:id"].stringValue
+                        item["summary"] = entry["summary"]["label"].stringValue
+                        item["price"] = entry["im:price"]["attributes"]["amount"].stringValue
+                        item["company"] = entry["im:artist"]["label"].stringValue
+                        item["releaseDate"] = entry["im:releaseDate"]["attributes"]["label"].stringValue
+                        
+                        
+                        result.append(item)
                         
                     }
                     

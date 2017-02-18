@@ -8,6 +8,7 @@
     <entity name="TopApp" representedClassName="TopApp" syncable="YES" codeGenerationType="class">
         <attribute name="categoryId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -18,6 +19,6 @@
     </entity>
     <elements>
         <element name="CategoryApp" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="TopApp" positionX="-63" positionY="9" width="128" height="180"/>
+        <element name="TopApp" positionX="-63" positionY="9" width="128" height="195"/>
     </elements>
 </model>
