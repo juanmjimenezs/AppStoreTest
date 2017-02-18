@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EuZ-Lj-2Ha">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +21,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6kx-0V-tB5">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.23201825200000001" green="0.23201825200000001" blue="0.23201825200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zch-iW-zBC">
                                     <size key="itemSize" width="356" height="62"/>
@@ -34,7 +35,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="XSl-Yd-u3Q" customClass="CategoryCell" customModule="AppStoreTest" customModuleProvider="target">
-                                        <rect key="frame" x="-18" y="0.0" width="356" height="62"/>
+                                        <rect key="frame" x="10" y="0.0" width="356" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="356" height="62"/>
@@ -90,11 +91,11 @@
                         <viewControllerLayoutGuide type="bottom" id="II7-fK-2dO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yFW-uO-ZG7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f6e-0N-PiM">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GpD-98-5h3">
                                     <size key="itemSize" width="348" height="109"/>
@@ -104,7 +105,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppCell" id="shn-iS-DK0">
-                                        <rect key="frame" x="-14" y="0.0" width="348" height="109"/>
+                                        <rect key="frame" x="14" y="0.0" width="348" height="109"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="348" height="109"/>
@@ -191,22 +192,42 @@
                         <viewControllerLayoutGuide type="bottom" id="AFw-ka-85k"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S6i-Xy-mo6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="default-image" translatesAutoresizingMaskIntoConstraints="NO" id="8l1-qQ-Vgy">
+                                <rect key="frame" x="128" y="71" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="A7x-Qc-UFa"/>
+                                    <constraint firstAttribute="width" secondItem="8l1-qQ-Vgy" secondAttribute="height" multiplier="1:1" id="tit-UR-SUb"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="A7x-Qc-UFa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="A7x-Qc-UFa"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Xn-ut-sGt">
-                                <rect key="frame" x="0.0" y="199" width="320" height="369"/>
+                                <rect key="frame" x="0.0" y="199" width="375" height="468"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="TBd-ng-QJn">
-                                        <rect key="frame" x="8" y="134" width="304" height="227"/>
+                                        <rect key="frame" x="8" y="134" width="359" height="326"/>
                                         <color key="backgroundColor" red="0.25627914070000002" green="0.25881655790000002" blue="0.25881655790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        </variation>
                                     </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="7mV-34-VSE">
-                                        <rect key="frame" x="8" y="8" width="304" height="100"/>
+                                        <rect key="frame" x="8" y="8" width="359" height="100"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="TRY-R6-wzV">
                                                 <rect key="frame" x="0.0" y="0.0" width="107" height="19"/>
@@ -216,12 +237,18 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdH-Ri-Q59">
                                                         <rect key="frame" x="84" y="0.0" width="23" height="19"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
                                             </stackView>
@@ -233,12 +260,18 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhE-n2-r8z">
                                                         <rect key="frame" x="109" y="0.0" width="23" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
                                             </stackView>
@@ -250,12 +283,18 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foD-se-HdV">
                                                         <rect key="frame" x="81" y="0.0" width="23" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
                                             </stackView>
@@ -267,18 +306,26 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        </variation>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNV-TI-72B">
                                                         <rect key="frame" x="50" y="0.0" width="23" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="AJG-7C-bJt"/>
+                                            <constraint firstAttribute="height" constant="100" id="AJG-7C-bJt">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                            </constraint>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -309,57 +356,102 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="default-image" translatesAutoresizingMaskIntoConstraints="NO" id="8l1-qQ-Vgy">
-                                <rect key="frame" x="100" y="71" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="A7x-Qc-UFa"/>
-                                    <constraint firstAttribute="width" secondItem="8l1-qQ-Vgy" secondAttribute="height" multiplier="1:1" id="tit-UR-SUb"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="A7x-Qc-UFa"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="A7x-Qc-UFa"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.25627914070000002" green="0.25881655790000002" blue="0.25881655790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Xn-ut-sGt" firstAttribute="leading" secondItem="S6i-Xy-mo6" secondAttribute="leadingMargin" id="4Rg-5l-HoR"/>
                             <constraint firstItem="6Xn-ut-sGt" firstAttribute="top" secondItem="8l1-qQ-Vgy" secondAttribute="bottom" constant="8" id="7H9-vX-Gmk"/>
                             <constraint firstItem="AFw-ka-85k" firstAttribute="top" secondItem="6Xn-ut-sGt" secondAttribute="bottom" id="93I-i8-0ZK"/>
+                            <constraint firstItem="6Xn-ut-sGt" firstAttribute="top" secondItem="iSR-en-M49" secondAttribute="bottom" constant="8" id="FFo-Hi-KOf"/>
+                            <constraint firstItem="8l1-qQ-Vgy" firstAttribute="top" secondItem="iSR-en-M49" secondAttribute="bottom" constant="7" id="Ngd-SP-XHL"/>
                             <constraint firstItem="8l1-qQ-Vgy" firstAttribute="width" relation="lessThanOrEqual" secondItem="S6i-Xy-mo6" secondAttribute="width" id="NtA-8g-JOm"/>
+                            <constraint firstItem="8l1-qQ-Vgy" firstAttribute="leading" secondItem="S6i-Xy-mo6" secondAttribute="leadingMargin" constant="7" id="Q2R-HN-Mpc"/>
                             <constraint firstAttribute="trailing" secondItem="6Xn-ut-sGt" secondAttribute="trailing" id="Rrg-sD-WSU"/>
+                            <constraint firstItem="8l1-qQ-Vgy" firstAttribute="centerY" secondItem="S6i-Xy-mo6" secondAttribute="centerY" id="S5e-sJ-OJ0"/>
+                            <constraint firstItem="8l1-qQ-Vgy" firstAttribute="leading" secondItem="S6i-Xy-mo6" secondAttribute="leading" constant="8" id="Tvv-bO-g77"/>
+                            <constraint firstAttribute="bottom" secondItem="6Xn-ut-sGt" secondAttribute="bottom" constant="8" id="Uya-rK-uTA"/>
+                            <constraint firstItem="6Xn-ut-sGt" firstAttribute="top" secondItem="8l1-qQ-Vgy" secondAttribute="bottom" constant="21.5" id="XbF-Yq-cRj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Xn-ut-sGt" secondAttribute="trailing" id="Xv4-F5-wye"/>
+                            <constraint firstItem="8l1-qQ-Vgy" firstAttribute="height" secondItem="S6i-Xy-mo6" secondAttribute="height" multiplier="0.4" id="a8B-Cz-yU9"/>
+                            <constraint firstItem="6Xn-ut-sGt" firstAttribute="leading" secondItem="8l1-qQ-Vgy" secondAttribute="trailing" constant="20" id="b0N-Pa-fBO"/>
                             <constraint firstItem="8l1-qQ-Vgy" firstAttribute="width" relation="lessThanOrEqual" secondItem="S6i-Xy-mo6" secondAttribute="width" id="bsb-Ah-8ee"/>
+                            <constraint firstItem="8l1-qQ-Vgy" firstAttribute="top" secondItem="iSR-en-M49" secondAttribute="bottom" constant="16" id="cVF-py-js8"/>
                             <constraint firstItem="8l1-qQ-Vgy" firstAttribute="centerX" secondItem="S6i-Xy-mo6" secondAttribute="centerX" id="gQ3-mc-xII"/>
+                            <constraint firstAttribute="trailing" secondItem="6Xn-ut-sGt" secondAttribute="trailing" constant="8" id="ifJ-6X-V59"/>
+                            <constraint firstItem="6Xn-ut-sGt" firstAttribute="height" secondItem="S6i-Xy-mo6" secondAttribute="height" id="jT1-SX-txS"/>
+                            <constraint firstItem="8l1-qQ-Vgy" firstAttribute="height" secondItem="S6i-Xy-mo6" secondAttribute="height" multiplier="0.5" id="mip-9s-cI5"/>
+                            <constraint firstItem="8l1-qQ-Vgy" firstAttribute="centerX" secondItem="S6i-Xy-mo6" secondAttribute="centerX" id="n1X-3r-XiT"/>
                             <constraint firstItem="6Xn-ut-sGt" firstAttribute="leading" secondItem="S6i-Xy-mo6" secondAttribute="leading" id="tmA-3T-WNc"/>
+                            <constraint firstItem="AFw-ka-85k" firstAttribute="top" secondItem="6Xn-ut-sGt" secondAttribute="bottom" id="yCS-GQ-XGo"/>
                             <constraint firstItem="8l1-qQ-Vgy" firstAttribute="top" secondItem="iSR-en-M49" secondAttribute="bottom" constant="7" id="yOR-Lz-HSF"/>
+                            <constraint firstItem="8l1-qQ-Vgy" firstAttribute="top" secondItem="iSR-en-M49" secondAttribute="bottom" constant="8" id="zaH-SN-2ea"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="7H9-vX-Gmk"/>
-                                <exclude reference="Rrg-sD-WSU"/>
-                                <exclude reference="tmA-3T-WNc"/>
+                                <exclude reference="Ngd-SP-XHL"/>
                                 <exclude reference="NtA-8g-JOm"/>
+                                <exclude reference="Q2R-HN-Mpc"/>
+                                <exclude reference="S5e-sJ-OJ0"/>
+                                <exclude reference="Tvv-bO-g77"/>
+                                <exclude reference="a8B-Cz-yU9"/>
                                 <exclude reference="bsb-Ah-8ee"/>
+                                <exclude reference="cVF-py-js8"/>
                                 <exclude reference="gQ3-mc-xII"/>
+                                <exclude reference="mip-9s-cI5"/>
+                                <exclude reference="n1X-3r-XiT"/>
                                 <exclude reference="yOR-Lz-HSF"/>
+                                <exclude reference="zaH-SN-2ea"/>
+                                <exclude reference="4Rg-5l-HoR"/>
+                                <exclude reference="7H9-vX-Gmk"/>
+                                <exclude reference="FFo-Hi-KOf"/>
+                                <exclude reference="Rrg-sD-WSU"/>
+                                <exclude reference="Uya-rK-uTA"/>
+                                <exclude reference="XbF-Yq-cRj"/>
+                                <exclude reference="Xv4-F5-wye"/>
+                                <exclude reference="b0N-Pa-fBO"/>
+                                <exclude reference="ifJ-6X-V59"/>
+                                <exclude reference="jT1-SX-txS"/>
+                                <exclude reference="tmA-3T-WNc"/>
                                 <exclude reference="93I-i8-0ZK"/>
+                                <exclude reference="yCS-GQ-XGo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="Ngd-SP-XHL"/>
+                                <exclude reference="Q2R-HN-Mpc"/>
+                                <include reference="S5e-sJ-OJ0"/>
+                                <include reference="Tvv-bO-g77"/>
+                                <include reference="mip-9s-cI5"/>
+                                <exclude reference="zaH-SN-2ea"/>
+                                <include reference="FFo-Hi-KOf"/>
+                                <include reference="Uya-rK-uTA"/>
+                                <include reference="b0N-Pa-fBO"/>
+                                <include reference="ifJ-6X-V59"/>
+                                <exclude reference="jT1-SX-txS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="7H9-vX-Gmk"/>
-                                <include reference="Rrg-sD-WSU"/>
-                                <include reference="tmA-3T-WNc"/>
                                 <exclude reference="NtA-8g-JOm"/>
                                 <include reference="bsb-Ah-8ee"/>
                                 <include reference="gQ3-mc-xII"/>
                                 <include reference="yOR-Lz-HSF"/>
+                                <include reference="7H9-vX-Gmk"/>
+                                <include reference="Rrg-sD-WSU"/>
+                                <include reference="tmA-3T-WNc"/>
                                 <include reference="93I-i8-0ZK"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="a8B-Cz-yU9"/>
+                                <include reference="cVF-py-js8"/>
+                                <include reference="n1X-3r-XiT"/>
+                                <include reference="4Rg-5l-HoR"/>
+                                <include reference="XbF-Yq-cRj"/>
+                                <include reference="Xv4-F5-wye"/>
+                                <include reference="yCS-GQ-XGo"/>
                             </mask>
                         </variation>
                     </view>
