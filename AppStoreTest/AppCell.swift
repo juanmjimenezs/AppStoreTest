@@ -14,5 +14,4 @@ class AppCell: UICollectionViewCell {
     @IBOutlet weak var lblCompanyName: UILabel!
     @IBOutlet weak var lblAppName: UILabel!
     @IBOutlet weak var lblSummary: UILabel!
-    @IBOutlet weak var lblPrice: UILabel!
 }

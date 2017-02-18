@@ -112,7 +112,6 @@ extension AppListVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         }
         cell.lblAppName.text = currentApp.name
         cell.lblCompanyName.text = currentApp.company
-        cell.lblPrice.text = String(format: "$%.02f", locale: Locale.current, arguments: [currentApp.price])
         cell.lblSummary.text = currentApp.summary?.replacingOccurrences(of: "\n", with: "")
         
         //Asi le damos una sombra muy bonita
