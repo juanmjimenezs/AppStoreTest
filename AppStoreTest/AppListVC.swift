@@ -35,7 +35,7 @@ class AppListVC: UIViewController {
         self.collectionView.refreshControl = self.refresh
         
         //Asignamos el titulo según la categoría en la que nos encontremos
-        self.navigationItem.title = "Apps: \(self.category.title!)"
+        self.navigationItem.title = self.category.title!
     }
     
     func loadApps() {
