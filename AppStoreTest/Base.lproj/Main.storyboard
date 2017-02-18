@@ -85,7 +85,7 @@
         <!--Apps-->
         <scene sceneID="sJ1-sH-m0w">
             <objects>
-                <viewController title="Apps" automaticallyAdjustsScrollViewInsets="NO" id="6zi-DA-n3Y" sceneMemberID="viewController">
+                <viewController title="Apps" automaticallyAdjustsScrollViewInsets="NO" id="6zi-DA-n3Y" customClass="AppListVC" customModule="AppStoreTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bfp-Qb-X4r"/>
                         <viewControllerLayoutGuide type="bottom" id="II7-fK-2dO"/>
@@ -186,7 +186,7 @@
         <!--App name-->
         <scene sceneID="WNb-th-Tiv">
             <objects>
-                <viewController title="App name" automaticallyAdjustsScrollViewInsets="NO" id="Lln-Ec-XIy" sceneMemberID="viewController">
+                <viewController title="App name" automaticallyAdjustsScrollViewInsets="NO" id="Lln-Ec-XIy" customClass="AppDetailVC" customModule="AppStoreTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iSR-en-M49"/>
                         <viewControllerLayoutGuide type="bottom" id="AFw-ka-85k"/>
