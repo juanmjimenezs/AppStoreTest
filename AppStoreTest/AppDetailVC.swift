@@ -18,6 +18,7 @@ class AppDetailVC: UIViewController {
     @IBOutlet weak var lblPrice: UILabel!
     @IBOutlet weak var summary: UITextView!
     
+    //Tanto el objeto con la app como el objeto de la categoría se cargan desde el prepare de la lista de apps
     var app: TopApp = TopApp()
     var category: CategoryApp = CategoryApp()
 
@@ -29,6 +30,7 @@ class AppDetailVC: UIViewController {
         self.loadData()
     }
 
+    //Asignamos todos los valores a los diferentes elementos de la interfaz
     func loadData() {
         
         if let imageUrl = self.app.image {

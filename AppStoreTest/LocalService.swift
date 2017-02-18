@@ -177,7 +177,7 @@ class LocalService {
      actualiza las de Core Data y luego retorta estas ya actualizadas.
      
      - parameters:
-        - byCategory: la categoría de la que queremos obtener la lista de aplicaciones
+        - byCategory: el id de la categoría de la que queremos obtener la lista de aplicaciones
         - localHandler: entrega las apps sin actualizar
         - remoteHandler: entrega las apps ya actualizadas desde el WS
      */

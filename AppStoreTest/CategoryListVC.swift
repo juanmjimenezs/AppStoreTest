@@ -52,7 +52,12 @@ class CategoryListVC: UIViewController {
         })
     }
     
-    ///Calculamos el ancho de la celda
+    /**
+     Calculamos el ancho de la celda
+     
+     - returns:
+     Retornamos el ancho que debe tener cada celda
+     */
     func cellSizeWidht() -> CGFloat {
         let screenWidth: CGFloat = self.view.frame.width
         var itemSize: CGFloat = screenWidth - self.padding * 2
@@ -118,7 +123,7 @@ extension CategoryListVC: UICollectionViewDelegate, UICollectionViewDataSource, 
     //Configuramos el tamaño de la celda...
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: self.cellSizeWidht(), height: 50)
+        return CGSize(width: self.cellSizeWidht(), height: 80)
     }
     
     //Configuramos el pading entre celdas

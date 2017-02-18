@@ -26,7 +26,7 @@ class AppListVC: UIViewController {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
 
-        //Cargamos la lista de categorías
+        //Cargamos la lista de aplicaciones
         self.loadApps()
 
         //Pull to refresh...
@@ -38,6 +38,7 @@ class AppListVC: UIViewController {
         self.navigationItem.title = self.category.title!
     }
     
+    ///Primero cargamos la lista de Core Data y luego si descargamos datos del WS la volvemos a actualizar
     func loadApps() {
         self.dataProvider.getApps(byCategory: self.category.id!, localHandler: { (apps) in
             if let apps = apps {
@@ -98,6 +99,7 @@ class AppListVC: UIViewController {
 }
 
 extension AppListVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.appList.count
     }
