@@ -474,6 +474,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="8l1-qQ-Vgy" id="9BH-u3-3mQ"/>
+                        <outlet property="lblCategory" destination="foD-se-HdV" id="qyn-5U-ghj"/>
+                        <outlet property="lblCompany" destination="TdH-Ri-Q59" id="xZ1-l2-9RL"/>
+                        <outlet property="lblPrice" destination="iNV-TI-72B" id="Cn5-IL-1Ey"/>
+                        <outlet property="lblReleaseDate" destination="GhE-n2-r8z" id="eXk-mo-Qbd"/>
+                        <outlet property="summary" destination="TBd-ng-QJn" id="bPm-SA-VUy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6Y-PJ-kVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

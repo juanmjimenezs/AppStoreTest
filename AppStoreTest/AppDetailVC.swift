@@ -7,29 +7,43 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AppDetailVC: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var lblCompany: UILabel!
+    @IBOutlet weak var lblReleaseDate: UILabel!
+    @IBOutlet weak var lblCategory: UILabel!
+    @IBOutlet weak var lblPrice: UILabel!
+    @IBOutlet weak var summary: UITextView!
+    
+    var app: TopApp = TopApp()
+    var category: CategoryApp = CategoryApp()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = self.app.name
+        
+        self.loadData()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func loadData() {
+        
+        if let imageUrl = self.app.image {
+            self.imageView.kf.setImage(with: ImageResource(downloadURL: URL(string: imageUrl)!), placeholder: #imageLiteral(resourceName: "default-image"), options: nil, progressBlock: nil, completionHandler: nil)
+        }
+        
+        self.lblCompany.text = self.app.company
+        self.lblReleaseDate.text = self.app.releaseDate
+        self.lblCategory.text = self.category.title
+        self.lblPrice.text = String(format: "$%.02f", locale: Locale.current, arguments: [self.app.price])
+        self.summary.text = self.app.summary
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        self.summary.scrollRangeToVisible(NSMakeRange(0,0))
     }
-    */
-
 }
