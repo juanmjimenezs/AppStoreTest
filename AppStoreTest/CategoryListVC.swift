@@ -71,15 +71,24 @@ class CategoryListVC: UIViewController {
         self.collectionView.reloadData()
     }
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "AppList" {
+            if let indexPathSelectedCell = self.collectionView.indexPathsForSelectedItems?.last {
+                let appListVC = segue.destination as! AppListVC
+                
+                appListVC.category = self.categoryList[indexPathSelectedCell.row]
+                
+                //Así le quitamos el texto de "Back" al botón de la barra de navegación
+                let backItem = UIBarButtonItem()
+                backItem.title = ""
+                navigationItem.backBarButtonItem = backItem
+            }
+        }
     }
-    */
 
 }
 

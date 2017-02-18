@@ -59,7 +59,7 @@
                                         <size key="customSize" width="356" height="62"/>
                                         <connections>
                                             <outlet property="lblCategory" destination="nTk-V7-KXt" id="3pu-n2-WJs"/>
-                                            <segue destination="6zi-DA-n3Y" kind="show" id="Q5u-zS-Xnm"/>
+                                            <segue destination="6zi-DA-n3Y" kind="show" identifier="AppList" id="Q5u-zS-Xnm"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -104,7 +104,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppCell" id="shn-iS-DK0">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AppCell" id="shn-iS-DK0" customClass="AppCell" customModule="AppStoreTest" customModuleProvider="target">
                                         <rect key="frame" x="33" y="0.0" width="348" height="109"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -164,7 +164,12 @@
                                             <constraint firstItem="XRt-B0-AAc" firstAttribute="leading" secondItem="iVB-NW-WsM" secondAttribute="trailing" constant="8" id="xx6-wP-SfL"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="Lln-Ec-XIy" kind="show" id="RP2-IB-4A0"/>
+                                            <outlet property="imageView" destination="iVB-NW-WsM" id="6CM-yr-8DG"/>
+                                            <outlet property="lblAppName" destination="a0Q-BW-YDC" id="1F7-8C-A28"/>
+                                            <outlet property="lblCompanyName" destination="XRt-B0-AAc" id="qwL-Tx-KeQ"/>
+                                            <outlet property="lblPrice" destination="bJe-sg-6ai" id="Sg3-2n-DHW"/>
+                                            <outlet property="lblSummary" destination="tTM-xY-C5t" id="wAv-7d-wch"/>
+                                            <segue destination="Lln-Ec-XIy" kind="show" identifier="DetailApp" id="RP2-IB-4A0"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -178,6 +183,9 @@
                             <constraint firstItem="f6e-0N-PiM" firstAttribute="top" secondItem="bfp-Qb-X4r" secondAttribute="bottom" id="rm8-JR-bUL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="f6e-0N-PiM" id="BrA-6W-Uhq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3TN-VB-mdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

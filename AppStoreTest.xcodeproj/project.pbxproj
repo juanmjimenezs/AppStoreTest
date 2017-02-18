@@ -10,6 +10,7 @@
 		B658DCD3621CDDBF53FE337F /* Pods_AppStoreTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C47A4A1B279DA3878D7D895 /* Pods_AppStoreTest.framework */; };
 		FA23725D1E57FB9800AEFBC2 /* AppListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23725C1E57FB9800AEFBC2 /* AppListVC.swift */; };
 		FA23725F1E57FBD100AEFBC2 /* AppDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23725E1E57FBD100AEFBC2 /* AppDetailVC.swift */; };
+		FA2372611E58034B00AEFBC2 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2372601E58034B00AEFBC2 /* AppCell.swift */; };
 		FA97A5D81E55161800F0CA3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97A5D71E55161800F0CA3A /* AppDelegate.swift */; };
 		FA97A5DD1E55161800F0CA3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA97A5DB1E55161800F0CA3A /* Main.storyboard */; };
 		FA97A5E01E55161800F0CA3A /* AppStoreTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA97A5DE1E55161800F0CA3A /* AppStoreTest.xcdatamodeld */; };
@@ -28,6 +29,7 @@
 		F854EFB22D7CB755DF9260C9 /* Pods-AppStoreTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppStoreTest/Pods-AppStoreTest.release.xcconfig"; sourceTree = "<group>"; };
 		FA23725C1E57FB9800AEFBC2 /* AppListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListVC.swift; sourceTree = "<group>"; };
 		FA23725E1E57FBD100AEFBC2 /* AppDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailVC.swift; sourceTree = "<group>"; };
+		FA2372601E58034B00AEFBC2 /* AppCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 		FA97A5D41E55161800F0CA3A /* AppStoreTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA97A5D71E55161800F0CA3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA97A5DC1E55161800F0CA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				FA97A5DE1E55161800F0CA3A /* AppStoreTest.xcdatamodeld */,
 				FA97A5F41E55308100F0CA3A /* CategoryCell.swift */,
+				FA2372601E58034B00AEFBC2 /* AppCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				FA97A5D81E55161800F0CA3A /* AppDelegate.swift in Sources */,
 				FA97A5F31E551D7F00F0CA3A /* CategoryListVC.swift in Sources */,
 				FA97A5F71E554B4400F0CA3A /* CoreDataStack.swift in Sources */,
+				FA2372611E58034B00AEFBC2 /* AppCell.swift in Sources */,
 				FA23725F1E57FBD100AEFBC2 /* AppDetailVC.swift in Sources */,
 				FA97A5F11E5516D400F0CA3A /* RemoteService.swift in Sources */,
 				FA97A5F91E554D5400F0CA3A /* LocalService.swift in Sources */,
