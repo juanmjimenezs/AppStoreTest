@@ -104,6 +104,13 @@ extension CategoryListVC: UICollectionViewDelegate, UICollectionViewDataSource, 
         let currentCategory = self.categoryList[indexPath.row]
         
         cell.lblCategory.text = currentCategory.title
+
+        //Asi le damos una sombra muy bonita
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOffset = CGSize(width: 3, height: 3)
+        cell.layer.shadowOpacity = 0.6
+        cell.layer.shadowRadius = 4.0
+        cell.layer.masksToBounds = false
         
         return cell
     }

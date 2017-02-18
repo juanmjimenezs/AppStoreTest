@@ -118,19 +118,19 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Company name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.84999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="XRt-B0-AAc">
-                                                    <rect key="frame" x="112" y="19" width="197" height="12"/>
+                                                    <rect key="frame" x="112" y="14" width="200" height="12"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJe-sg-6ai">
-                                                    <rect key="frame" x="317" y="8" width="23" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <rect key="frame" x="320" y="8" width="20" height="18"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chameleon Run is a unique, fast and challenging autorunner with a colorful twist." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTM-xY-C5t">
-                                                    <rect key="frame" x="112" y="59" width="228" height="45"/>
+                                                    <rect key="frame" x="112" y="54" width="228" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="AEf-wy-qN9"/>
                                                     </constraints>
@@ -139,7 +139,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="a0Q-BW-YDC">
-                                                    <rect key="frame" x="112" y="36" width="228" height="21"/>
+                                                    <rect key="frame" x="112" y="31" width="228" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" red="0.98039215690000003" green="0.38823529410000002" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -156,7 +156,7 @@
                                             <constraint firstItem="tTM-xY-C5t" firstAttribute="top" secondItem="a0Q-BW-YDC" secondAttribute="bottom" constant="2" id="jam-Xd-tEx"/>
                                             <constraint firstItem="a0Q-BW-YDC" firstAttribute="leading" secondItem="iVB-NW-WsM" secondAttribute="trailing" constant="8" id="ju3-No-faf"/>
                                             <constraint firstAttribute="bottom" secondItem="iVB-NW-WsM" secondAttribute="bottom" constant="5" id="kau-NH-XcX"/>
-                                            <constraint firstAttribute="bottom" secondItem="tTM-xY-C5t" secondAttribute="bottom" constant="5" id="rwL-Gl-6Mb"/>
+                                            <constraint firstAttribute="bottom" secondItem="tTM-xY-C5t" secondAttribute="bottom" constant="10" id="rwL-Gl-6Mb"/>
                                             <constraint firstItem="bJe-sg-6ai" firstAttribute="top" secondItem="shn-iS-DK0" secondAttribute="topMargin" id="sdY-UC-YYv"/>
                                             <constraint firstAttribute="trailing" secondItem="tTM-xY-C5t" secondAttribute="trailing" constant="8" id="ug2-BK-pFX"/>
                                             <constraint firstItem="bJe-sg-6ai" firstAttribute="trailing" secondItem="shn-iS-DK0" secondAttribute="trailingMargin" id="v9b-DJ-doK"/>

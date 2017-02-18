@@ -106,6 +106,13 @@ extension AppListVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         cell.lblPrice.text = String(format: "$%.02f", locale: Locale.current, arguments: [currentApp.price])
         cell.lblSummary.text = currentApp.summary?.replacingOccurrences(of: "\n", with: "")
         
+        //Asi le damos una sombra muy bonita
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOffset = CGSize(width: 3, height: 3)
+        cell.layer.shadowOpacity = 0.6
+        cell.layer.shadowRadius = 4.0
+        cell.layer.masksToBounds = false
+        
         return cell
     }
     
