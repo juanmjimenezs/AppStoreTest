@@ -39,7 +39,22 @@ class AppListVC: UIViewController {
     }
     
     func loadApps() {
-        
+        self.dataProvider.getApps(byCategory: self.category.id!, localHandler: { (apps) in
+            if let apps = apps {
+                self.appList = apps
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            }
+        }, remoteHandler: { (apps) in
+            if let apps = apps {
+                self.appList = apps
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                    self.refresh.endRefreshing()
+                }
+            }
+        })
     }
     
     ///Calculamos el ancho de la celda
@@ -89,7 +104,7 @@ extension AppListVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         cell.lblAppName.text = currentApp.name
         cell.lblCompanyName.text = currentApp.company
         cell.lblPrice.text = String(format: "$%.02f", locale: Locale.current, arguments: [currentApp.price])
-        cell.lblSummary.text = currentApp.summary
+        cell.lblSummary.text = currentApp.summary?.replacingOccurrences(of: "\n", with: "")
         
         return cell
     }
@@ -97,7 +112,7 @@ extension AppListVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     //Configuramos el tamaño de la celda...
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: self.cellSizeWidht(), height: 50)
+        return CGSize(width: self.cellSizeWidht(), height: 110)
     }
     
     //Configuramos el pading entre celdas
