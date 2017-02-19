@@ -32,6 +32,13 @@ class CategoryListVC: UIViewController {
         self.collectionView.refreshControl = self.refresh
     }
     
+    @IBAction func showInfo(_ sender: UIBarButtonItem) {
+        let alertController = UIAlertController(title: "The Author", message: "Juan Manuel Jiménez Sánchez built this app in approximately 25 hours.", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(alertAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
     ///Primero cargamos la lista de Core Data y luego si descargamos datos del WS la volvemos a actualizar
     func loadCategories() {
         self.dataProvider.getCategories(localHandler: { (categories) in

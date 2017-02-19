@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Top Free Applications-->
+        <!--Top Apps-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="CategoryListVC" customModule="AppStoreTest" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,7 +73,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6kx-0V-tB5" secondAttribute="bottom" id="k4R-0h-d6e"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Top Free Applications" id="n3q-lL-Rir"/>
+                    <navigationItem key="navigationItem" title="Top Apps" id="n3q-lL-Rir">
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="Dip-Qg-jsY">
+                            <connections>
+                                <action selector="showInfo:" destination="BYZ-38-t0r" id="C2U-mi-mTe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="6kx-0V-tB5" id="mUW-rB-pYf"/>
                     </connections>
