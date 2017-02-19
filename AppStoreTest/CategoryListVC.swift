@@ -48,6 +48,14 @@ class CategoryListVC: UIViewController {
                     self.collectionView.reloadData()
                     self.refresh.endRefreshing()
                 }
+            } else {
+                //Si no hay conexión...
+                DispatchQueue.main.async {
+                    let alertController = self.dataProvider.noInternetAlert()
+                    self.present(alertController, animated: true, completion: { 
+                        self.refresh.endRefreshing()
+                    })
+                }
             }
         })
     }

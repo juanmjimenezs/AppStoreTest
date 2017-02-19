@@ -124,7 +124,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chameleon Run is a unique, fast and challenging autorunner with a colorful twist." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTM-xY-C5t">
-                                                    <rect key="frame" x="112" y="54" width="228" height="45"/>
+                                                    <rect key="frame" x="112" y="59" width="228" height="45"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="AEf-wy-qN9"/>
                                                     </constraints>
@@ -150,7 +150,7 @@
                                             <constraint firstItem="tTM-xY-C5t" firstAttribute="leading" secondItem="iVB-NW-WsM" secondAttribute="trailing" constant="8" id="j2U-EZ-OPj"/>
                                             <constraint firstItem="a0Q-BW-YDC" firstAttribute="leading" secondItem="iVB-NW-WsM" secondAttribute="trailing" constant="8" id="ju3-No-faf"/>
                                             <constraint firstAttribute="bottom" secondItem="iVB-NW-WsM" secondAttribute="bottom" constant="5" id="kau-NH-XcX"/>
-                                            <constraint firstAttribute="bottom" secondItem="tTM-xY-C5t" secondAttribute="bottom" constant="10" id="rwL-Gl-6Mb"/>
+                                            <constraint firstAttribute="bottom" secondItem="tTM-xY-C5t" secondAttribute="bottom" constant="5" id="rwL-Gl-6Mb"/>
                                             <constraint firstAttribute="trailing" secondItem="tTM-xY-C5t" secondAttribute="trailing" constant="8" id="ug2-BK-pFX"/>
                                             <constraint firstAttribute="trailing" secondItem="a0Q-BW-YDC" secondAttribute="trailing" constant="8" id="wx3-Wm-oVA"/>
                                             <constraint firstItem="XRt-B0-AAc" firstAttribute="leading" secondItem="iVB-NW-WsM" secondAttribute="trailing" constant="8" id="xx6-wP-SfL"/>

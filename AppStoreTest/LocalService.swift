@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import UIKit
 import CoreData
 
 class LocalService {
     let remoteService = RemoteService()
     let coreDataStack = CoreDataStack.sharedInstance
-    
+
     // MARK: - Categorías
     
     /**
@@ -48,7 +49,7 @@ class LocalService {
                 //Como ya actualizamos Core Data entonces devolvemos los datos de allí
                 remoteHandler(self.queryCategories())
             } else {
-                remoteHandler(nil)
+                remoteHandler(nil)//Si hay un problema con el Internet o con el WS
             }
         }
     }
@@ -206,7 +207,7 @@ class LocalService {
                 //Como ya actualizamos Core Data entonces devolvemos los datos de allí
                 remoteHandler(self.queryApps(byCategory: categoryId))
             } else {
-                remoteHandler(nil)
+                remoteHandler(nil)//Si hay un problema con el Internet o con el WS
             }
         }
     }
@@ -336,5 +337,19 @@ class LocalService {
         } catch {
             print("Error mientras borrabamos de Core Data")
         }
+    }
+    
+    /**
+     Construye un Alert indicando que no hay internet
+     
+     - returns:
+     Retorna el Alert para ser presentado donde se requiera
+     */
+    func noInternetAlert() -> UIAlertController {
+        let alertController = UIAlertController(title: "No Internet", message: "There is troubles with the conection, the information would be outdated.", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(alertAction)
+        
+        return alertController
     }
 }

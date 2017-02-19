@@ -53,7 +53,7 @@ class RemoteService {
                 }
             case .failure(let error):
                 print(error)
-                completionHandler(nil)
+                completionHandler(nil)//Si hay un problema con el Internet o con el WS
             }
         }
     }
@@ -102,7 +102,7 @@ class RemoteService {
                 }
             case .failure(let error):
                 print(error)
-                completionHandler(nil)
+                completionHandler(nil)//Si hay un problema con el Internet o con el WS
             }
         }
     }
