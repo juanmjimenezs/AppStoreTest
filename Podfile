@@ -7,6 +7,7 @@ target 'AppStoreTest' do
   pod 'Alamofire', '~> 4.3'
   pod 'SwiftyJSON', '~> 3.1'
   pod 'Kingfisher', '~> 3.4'
+  pod 'Hero', '~> 0.3.0'
 
   # Pods for AppStoreTest
 
