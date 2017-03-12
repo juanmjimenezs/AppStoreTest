@@ -23,6 +23,6 @@ Then, run the following command: `$ pod install`
 
 | Portrait  | Landscape |
 | --------- | --------- |
-| ![Category list](/README_FILES/portrait-category.list.png) | ![Category list](/README_FILES/landscape-category.list.png) |
-| ![App list](/README_FILES/portrait-app.list.png)  | ![App list](/README_FILES/landscape-app.list.png) |
-| ![Detail App](/README_FILES/portrait-app.detail.png)  | ![Detail App](/README_FILES/landscape-app.detail.png) |
+| ![portrait-category list](https://cloud.githubusercontent.com/assets/1808666/23835794/6d68ea0a-073b-11e7-95bc-602eee1221f5.png) | ![landscape-category list](https://cloud.githubusercontent.com/assets/1808666/23835817/e8a5159a-073b-11e7-869d-6948c050c0ff.png) |
+| ![portrait-app list](https://cloud.githubusercontent.com/assets/1808666/23835818/e8a62a0c-073b-11e7-9d0b-cb3eb379af6f.png)  | ![landscape-app list](https://cloud.githubusercontent.com/assets/1808666/23835816/e8a26dea-073b-11e7-9216-f46bb5f9ccf7.png) |
+| ![portrait-app detail](https://cloud.githubusercontent.com/assets/1808666/23835819/e8a8e378-073b-11e7-9da5-ecab20bce708.png)  | ![landscape-app detail](https://cloud.githubusercontent.com/assets/1808666/23835815/e885a214-073b-11e7-9240-23f6306c3bc9.png) |
