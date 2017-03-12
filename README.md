@@ -17,5 +17,12 @@ Then, run the following command: `$ pod install`
 - [x] Cache with Core Data
 - [x] Animations with Hero
 - [x] Image cache with Kingfisher
+- [x] Refresh control
 
 ## How it looks
+
+| Portrait  | Landscape |
+| --------- | --------- |
+| ![Category list](/README_FILES/portrait-category.list.png) | ![Category list](/README_FILES/landscape-category.list.png) |
+| ![App list](/README_FILES/portrait-app.list.png)  | ![App list](/README_FILES/landscape-app.list.png) |
+| ![Detail App](/README_FILES/portrait-app.detail.png)  | ![Detail App](/README_FILES/landscape-app.detail.png) |
