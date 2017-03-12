@@ -1,4 +1,4 @@
-# AppStoreTest
+# AppStoreTest ![Xcode](https://img.shields.io/badge/Xcode-8.2.1-green.svg) ![Swift3](https://img.shields.io/badge/swift-3.0.2-orange.svg)
 
 This is for learning Swift 3, this app show a information about free apps by categories in iTunes.
 
